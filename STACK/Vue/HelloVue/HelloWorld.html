@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <!-- Fetch Vue.js from CDN !-->
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="app">
+            <!-- Using the vue templating engine !-->
+            <p>{{ message }}</p>
+        </div>
+
+        <script>
+            // Script is placed here so that it executes after <body> is rendered. 
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Vue!'
+                }
+            })
+        </script>
+        
+    </body>
+</html>
